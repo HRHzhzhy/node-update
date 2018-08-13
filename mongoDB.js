@@ -16,7 +16,11 @@
  * 2.启动数据库
  *  mongod --dbpath=/data/db --port=27017
  *  mongod --dbpath=/data/db --port=27017 --fork --syslog // 守护进程的方式启动，日志是系统日志
- * *  mongod --dbpath=/data/db --port=27017 --fork --logpath=/data/db/mongod.log // 守护进程的方式启动，指定日志路径
+ * *  mongod --dbpath=/Users/zyz/data/db --port=27017 --fork --logpath=/Users/zyz/data/log/mongod.log // 守护进程的方式启动，指定日志路径
+ mongod --dbpath=/Users/zyz/data/db --port=27017 --fork --logpath=/Users/zyz/data/log/mongod.log
+about to fork child process, waiting until server is ready for connections.
+forked process: 75146
+child process started successfully, parent exiting
  * 3.关闭数据库
  *  mongod --shutdown
  *  或者 kill
